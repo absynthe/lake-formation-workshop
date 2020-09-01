@@ -4,7 +4,10 @@
 [
         {
             "Effect": "Allow",
-            "Action": "dms:*",
+            "Action": [
+                "lambda:*",
+                "dms:*"
+            ],
             "Resource": "*"
         }
     ]
@@ -19,6 +22,7 @@ arn:aws:iam::aws:policy/AWSCloudFormationFullAccess
 arn:aws:iam::aws:policy/AWSGlueConsoleFullAccess
 arn:aws:iam::aws:policy/AWSLakeFormationDataAdmin
 arn:aws:iam::aws:policy/AmazonRDSFullAccess
+arn:aws:iam::aws:policy/AWSLambdaFullAccess
 arn:aws:iam::aws:policy/job-function/NetworkAdministrator
 ```
 
@@ -29,6 +33,7 @@ ec2.amazonaws.com
 glue.amazonaws.com
 dms.amazonaws.com
 rds.amazonaws.com
+lambda.amazonaws.com
 ```
 
 
