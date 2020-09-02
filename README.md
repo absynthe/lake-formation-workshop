@@ -64,12 +64,16 @@ The RDS Postgres database has already been created and populated for you. Go to 
 
 Next, click on the Template tab and then the View in Designer button.
 
+comment: I'm not able to see the diagram in designer. When I go to the 'Template'-tab is says: 'The stack is in review. After you create the stack, you can view its template here.'
+
 ![](images/designer.png)
 
 Go to the Outputs tab of AWS CloudFormation stack and note down the instance Endpoint information for your RDS endpoint, which will be similar to information shown in below screenshot:
 ![images/6.png](images/6.png) 
 
 ### Explore the database using AWS Lambda
+
+comment: How do I do this. There is no JS lambda included in the stack. 
 
 To avoid having to install a SQL Workbench locally, you can use the JS lambda function provided for you, which comes preloaded 
 
@@ -92,6 +96,9 @@ Use the following query to inspect the player table:
 Follow the instructions provided at: 
 
 https://aws-dataengineering-day.workshop.aws/en/400/430-main-lab.html
+
+comment: At a point the instructions says ‘g. Select the security group with dms-lab-subnet-grp in the name.‘. However, the security group that I had to select was named 
+'mod-f83f995df1b848f6-sgrdslaunchwizard2-17O9FDSR7PSJS' (so did not contain dms-lab-subnet-grp in the dame)
 
 ### Generate and Replicate the CDC data
 
