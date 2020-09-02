@@ -75,7 +75,14 @@ Go to the Outputs tab of AWS CloudFormation stack and note down the instance End
 To avoid having to install a SQL Workbench locally, you can use the lambda function. 
 1. Find the lambda function named GenerateCDCData
 2. Find the line that start with 'var query_cmd = ... 
-3. insert your sql statment here
+3. insert your sql statment here, like so: 
+![images/1.png](images/16.png) 
+
+4. Save the changes to the function by clicking 'Save' in the top right corner
+5. Click the 'Test' button next to the 'Save' button
+6. You can create an empty event as shown here:
+
+![images/16.png](images/16.png) 
 
 First, run the following query: 
 `SELECT * FROM pg_catalog.pg_tables;`
