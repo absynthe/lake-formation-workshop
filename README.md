@@ -11,6 +11,7 @@
     - [Main Lab](#main-lab)
     - [Generate and Replicate the CDC data](#generate-and-replicate-the-cdc-data)
   - [Lab 2: Lake Formation Workshop](#lab-2-lake-formation-workshop)
+  - [Feedback](#feedback)
 
 ## Lab 1: Database Migration Service
 
@@ -139,3 +140,8 @@ Run this query next in the lambda function:
 ## Lab 2: Lake Formation Workshop
 
 Follow the instructions provided at: https://aws-dataengineering-day.workshop.aws/en/1200/sagemaker.html.
+
+## Feedback
+
+Please rate this workshop by following the link below:
+https://survey.immersionday.com/GxPEp5vGR
