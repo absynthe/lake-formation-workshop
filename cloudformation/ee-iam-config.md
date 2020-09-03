@@ -54,6 +54,7 @@ arn:aws:iam::aws:policy/AWSCloudFormationFullAccess
 arn:aws:iam::aws:policy/AWSGlueConsoleFullAccess
 arn:aws:iam::aws:policy/AmazonRDSFullAccess
 arn:aws:iam::aws:policy/AWSLambdaFullAccess
+arn:aws:iam::aws:policy/AmazonAthenaFullAccess
 arn:aws:iam::aws:policy/job-function/NetworkAdministrator
 ```
 
@@ -67,6 +68,7 @@ rds.amazonaws.com
 lambda.amazonaws.com
 cloudformation.amazonaws.com
 lakeformation.amazonaws.com
+athena.amazonaws.com
 ```
 
 
