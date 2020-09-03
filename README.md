@@ -62,7 +62,7 @@ The RDS Postgres database has already been created and populated for you. Go to 
 
 ![images/5.png](images/5.png) 
 
-Next, click on the Template tab and then the View in Designer button.
+The infrastructure that has been created for this workshop looks like this: 
 
 ![](images/designer.png)
 
@@ -71,10 +71,18 @@ Go to the Outputs tab of AWS CloudFormation stack and note down the instance End
 
 ### Explore the database using AWS Lambda
 
-To avoid having to install a SQL Workbench locally, you can use the JS lambda function provided for you, which comes preloaded 
 
-Source database name | sportstickets
-Source schema name | dms_sample
+To avoid having to install a SQL Workbench locally, you can use the lambda function. 
+1. Find the lambda function named GenerateCDCData
+2. Find the line that start with 'var query_cmd = ... 
+3. insert your sql statment here, like so: 
+![images/1.png](images/1.png) 
+
+4. Save the changes to the function by clicking 'Save' in the top right corner
+5. Click the 'Test' button next to the 'Save' button
+6. You can create an empty event as shown here:
+
+![images/16.png](images/16.png) 
 
 First, run the following query: 
 `SELECT * FROM pg_catalog.pg_tables;`
@@ -92,6 +100,9 @@ Use the following query to inspect the player table:
 Follow the instructions provided at: 
 
 https://aws-dataengineering-day.workshop.aws/en/400/430-main-lab.html
+
+Note: At a point the instructions says ‘g. Select the security group with dms-lab-subnet-grp in the name‘. However, the security group is named 
+like so 'mod-xxxxxxxxxxxxxxxx-sgrdslaunchwizard2-xxxxxxxxxxxxx'
 
 ### Generate and Replicate the CDC data
 
