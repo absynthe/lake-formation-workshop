@@ -247,6 +247,8 @@ Under `IAM Users and Roles`, select the `LakeFormationWorkflowRole`. Grant “su
 
 #### Using blueprints
 
+Navigate to the Lake Formation service. 
+
 On the left pane navigate to Blueprints and click Use blueprints.
 
 ![](https://aws-dataengineering-day.workshop.aws/en/1200/images/27.png)
@@ -299,7 +301,7 @@ The Lake Formation blueprint creates a Glue Workflow under the hood which contai
 
 ![](images/glueWorkflow.png)
 
-4. To understand what all Glue Jobs got created as a part of this workflow, in the navigation pane, click on Jobs.
+4. To understand what Glue Jobs got created as a part of this workflow, in the navigation pane, click on Jobs.
 5. Every job comes with history, details, script and metrics tab. Review each of these tabs for any of the python shell or pyspark jobs.
 
 
@@ -307,7 +309,7 @@ The Lake Formation blueprint creates a Glue Workflow under the hood which contai
 
 #### Exploring the data lake with Athena
 
-1. Navigate to the Glue console.
+1. Navigate to the Lake Formation console.
 
 2. Navigate to Databases on the left panel and select `lf_db`.
 
