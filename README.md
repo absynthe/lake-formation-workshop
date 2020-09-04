@@ -17,6 +17,7 @@
       - [Create a database](#create-a-database)
       - [Grant permissions](#grant-permissions)
     - [Hydrate the datalake](#hydrate-the-datalake)
+      - [Create an S3 VPC endpoint](#create-an-s3-vpc-endpoint)
       - [Create Glue JDBC connection for RDS](#create-glue-jdbc-connection-for-rds)
       - [Using blueprints](#using-blueprints)
       - [Exploring the components of a blueprint](#exploring-the-components-of-a-blueprint)
@@ -205,6 +206,23 @@ Under `IAM Users and Roles`, select the `LakeFormationWorkflowRole`. Grant “su
 ![](https://aws-dataengineering-day.workshop.aws/en/1200/images/26.png)
 
 ### Hydrate the datalake
+
+#### Create an S3 VPC endpoint
+
+ Navigate to VPC Dashboard and select Endpoints from left section. Click on “Create Endpoint”.
+
+ ![](https://aws-dataengineering-day.workshop.aws/en/1200/images/6.png)
+ ![](https://aws-dataengineering-day.workshop.aws/en/1200/images/7.png)
+
+ In the next window, input the following details:
+1. Service Category: AWS Services
+2. Service name: com.amazonaws.us-east-1.s3
+3. VPC: same as VPC for RDS instance ( It has the description `DMSLabSourceDB`)
+4. Route table: in accordance to subnets
+5. Policy: Full Access
+6. Click on Create Endpoint
+
+![](https://aws-dataengineering-day.workshop.aws/en/1200/images/8.png)
 
 #### Create Glue JDBC connection for RDS
 
